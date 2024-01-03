@@ -1,0 +1,172 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* play-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --color-primary-white: #fff;
+  --color-primary-light: #2b7fff;
+  --color-primary-dark: #011c44;
+  --color-primary-black: #000;
+  --color-second-light: #747272;
+  --color-second-midel: #4a4a4a;
+  --color-second-dark: #011f4a;
+}
+
+/* ------ BASE -------------------------------- */
+
+body {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-white);
+}
+
+address {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+/* ----- BUTTON --------------------------------- */
+
+.button {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-light);
+  border: 2px solid var(--color-primary-light);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+  border: 2px solid var(--color-primary-light);
+  border-radius: 32px;
+}
+
+/* ----- LINK -------------------------------- */
+
+.link {
+  color: var(--color-primary-dark);
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #2b7fff;
+  font-weight: 700;
+}
+
+/* ---------- SECTION-TITLE --------------------------- */
+
+.section-title {
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-primary-dark);
+  text-align: center;
+}
+
+.section-title span {
+  color: var(--color-primary-light);
+}
+
+.section-title .capitalize {
+  text-transform: capitalize;
+}
+
+.section-title-left {
+  text-align: left;
+}
+
+/* -----------HEADER-------------------- */
+
+.header {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ----------- HERO ----------------------------------- */
+
+.hero-title {
+  font-family: Play;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.8;
+  text-transform: capitalize;
+  color: #2b7fff;
+}
+
+.hero-text {
+  color: var(--color-second-midel);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* -------DESCRIPTION----------------------------- */
+
+.description-text span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* -------ADVANTAGES----------------------------- */
+
+.advantages-text {
+  font-size: 18px;
+  color: var(--color-primary-black);
+  line-height: 1.3;
+}
+
+/* ---------- FOOTER --------------------------- */
+
+.footer {
+  background-color: var(--color-primary-dark);
+}
+
+.footer-link {
+  color: var(--color-primary-white);
+  font-size: 16px;
+}
+
+.footer-copyright {
+  color: var(--color-second-light);
+  font-size: 13px;
+}
